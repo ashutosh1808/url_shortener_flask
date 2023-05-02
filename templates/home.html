@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title> URL Shortener </title>
+	<style>
+		*{	font-family:Arial; font-size:120%; }
+		body{ background-color:lightgreen; }
+	</style>
+</head>
+<body>
+	<center>
+		<h1> Shorten any URL with our app </h1>
+		<br/><br/>
+		<form action="/shorten" method="post">
+		<textarea type="url" name="url" placeholder="https://example.com" pattern="https://.*" style="width:60%; height:40%; resize:none;" required></textarea>
+		<br/><br/>
+		<input type="submit" value="Shorten"/>
+		</form>
+		{{msg}}
+	</center>
+</body>
+</html>
